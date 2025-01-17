@@ -1,1 +1,6 @@
-<p>projets works!</p>
+<div class="projet-card">
+  <img [src]="projet.imageUrl" [alt]="projet.title" />
+  <h2>{{ projet.title | titlecase }}</h2>
+  <p>{{ projet.description }}</p>
+  <button>Lien</button>
+</div>
