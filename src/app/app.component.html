@@ -1,17 +1,17 @@
 <h1>Mes compétences</h1>
-<div class="skillsContainer">
+<div>
   @for (competence of competences; track competence.title) {
   <app-competences [competence]="competence" />
   }
 </div>
 <h1>Mes projets</h1>
-<div class="projectsContainer">
+<div>
   @for (projet of projets; track projet.title) {
   <app-projets [projet]="projet" />
   }
 </div>
 <h1>Contact</h1>
-<div class="contactsContainer">
+<div>
   @for (contact of contacts; track contact.title) {
   <app-contacts [contact]="contact" />
   }
