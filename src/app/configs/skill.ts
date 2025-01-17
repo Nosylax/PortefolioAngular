@@ -1,6 +1,6 @@
-import { Competence } from "../models/competences";
+import { Skill } from "../models/skills";
 
-export const getSkills = (): Competence[] => [
+export const getSkills = (): Skill[] => [
     {
         title: 'React',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
