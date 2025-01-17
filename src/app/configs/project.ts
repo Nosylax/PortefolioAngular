@@ -1,6 +1,6 @@
-import { Projet } from "../models/projets";
+import { Project } from "../models/projects";
 
-export const getProjects = (): Projet[] => [
+export const getProjects = (): Project[] => [
     {
         title: 'Bookie',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
