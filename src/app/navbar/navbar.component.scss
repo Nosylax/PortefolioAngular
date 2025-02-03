@@ -1,0 +1,36 @@
+nav {
+  background-color: violet;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 0 15px;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 300;
+        padding: 10px 15px;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+          background-color: #575757;
+          color: #fff;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

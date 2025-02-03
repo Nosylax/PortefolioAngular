@@ -8,12 +8,13 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { getProjects } from './configs/project';
 import { getSkills } from './configs/skill';
 import { getContact } from './configs/contact';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [ProjectsComponent, SkillsComponent, ContactsComponent],
+  imports: [ProjectsComponent, SkillsComponent, ContactsComponent, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -28,4 +29,3 @@ export class AppComponent implements OnInit {
     this.contacts = getContact().map((contact) => new Contact(contact.title, contact.description, contact.imageUrl))
   }
 }
-

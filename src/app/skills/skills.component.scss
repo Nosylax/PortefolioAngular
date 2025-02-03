@@ -1,26 +1,23 @@
 .skill-card {
-    box-sizing: border-box;
-    width: 30%;
-    margin: 20px auto;
-    padding: 1rem 1rem;
-    box-shadow: lightgray 4px 4px 20px;
-    text-align: center;
-    
-    
-    img {
-      
-      width: 100%;
-      height: 150px;
-      object-fit: contain;
-  
-    }
-    h2 {
-      margin-bottom: 0;
-    }
-    p {
-      font-weight: 300;
-      font-size: 16px;
-      text-align: start;
-      padding: 10px 30px;
-    }
+  box-sizing: border-box;
+  width: 30%;
+  margin: 20px auto;
+  padding: 1rem 1rem;
+  box-shadow: lightgray 4px 4px 20px;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: start;
+    padding: 10px 30px;
+  }
 }
