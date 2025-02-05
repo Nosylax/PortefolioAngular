@@ -1,17 +1,17 @@
 <app-navbar></app-navbar>
-<h1>Mes compétences</h1>
+<section id="section1">Mes compétences</section>
 <div>
   @for (skill of skills; track skill.title) {
   <app-skills [skill]="skill" />
   }
 </div>
-<h1>Mes projets</h1>
+<section id="section2">Mes projets</section>
 <div>
   @for (project of projects; track project.title) {
   <app-projects [project]="project" />
   }
 </div>
-<h1>Contact</h1>
+<section id="section3">Contact</section>
 <div>
   @for (contact of contacts; track contact.title) {
   <app-contacts [contact]="contact" />
