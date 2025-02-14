@@ -1,10 +1,10 @@
 .skill-card {
   box-sizing: border-box;
-  width: 30%;
   margin: 20px auto;
   padding: 1rem 1rem;
-  box-shadow: lightgray 4px 4px 20px;
   text-align: center;
+  background-color: var(--container-color);
+  border-radius: 1.25rem;
 
   img {
     width: 100%;
@@ -13,11 +13,13 @@
   }
   h2 {
     margin-bottom: 0;
+    color: var(--first-color);
   }
   p {
     font-weight: 300;
     font-size: 16px;
     text-align: start;
     padding: 10px 30px;
+    color: var(--text-color);
   }
 }

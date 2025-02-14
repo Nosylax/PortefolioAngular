@@ -1,10 +1,31 @@
 * {
-  font-family: Roboto, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+}
+
+:root {
+  --header-height: 3.5rem;
+  --first-hue: 234;
+  --sat: 100%;
+  --lig: 66%;
+  --second-hue: 218;
+  --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%);
+  --title-color: hsl(var(--second-hue), 15%, 95%);
+  --text-color: hsl(var(--second-hue), 8%, 75%);
+  --text-color-light: hsl(var(--second-hue), 4%, 55%);
+  --body-color: hsl(var(--second-hue), 0%, 12%);
+  --container-color: hsl(var(--second-hue), 30%, 20%);
+  --body-font: "Poppins", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
-section {
-  padding-top: 60px;
+
+h1 {
+  color: var(--first-color);
 }

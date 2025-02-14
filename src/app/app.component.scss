@@ -1,1 +1,12 @@
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
+  width: 100%;
+  margin-left: 10px;
 
+  .skills_cards {
+    width: 20%;
+  }
+}

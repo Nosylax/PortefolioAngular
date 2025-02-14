@@ -4,17 +4,17 @@ export const getSkills = (): Skill[] => [
     {
         title: 'React',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
-        imageUrl: "/react.jpg",
+        imageUrl: "/react.png",
     },
     {
         title: 'HTML / CSS',
         description: 'Lorem amet dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
-        imageUrl: "/html-css.jpg",
+        imageUrl: "/html-css.png",
     },
     {
         title: 'JS',
         description: 'Lorem amet dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
-        imageUrl: "/js.jpg",
+        imageUrl: "/js.png",
     },
     {
         title: 'Gestion de projet',

@@ -1,19 +1,22 @@
 <app-navbar></app-navbar>
-<section id="section1">Mes compétences</section>
-<div>
-  @for (skill of skills; track skill.title) {
-  <app-skills [skill]="skill" />
-  }
-</div>
-<section id="section2">Mes projets</section>
-<div>
-  @for (project of projects; track project.title) {
-  <app-projects [project]="project" />
-  }
-</div>
-<section id="section3">Contact</section>
-<div>
-  @for (contact of contacts; track contact.title) {
-  <app-contacts [contact]="contact" />
-  }
-</div>
+<main>
+  <h1 id="Skills">Mes compétences</h1>
+  <div class="skills-container">
+    @for (skill of skills; track skill.title) {
+    <app-skills class="skills_cards" [skill]="skill" />
+    }
+  </div>
+  <h1 id="Projects">Mes projets</h1>
+  <div>
+    @for (project of projects; track project.title) {
+    <app-projects [project]="project" />
+    }
+  </div>
+  <h1 id="Contacts">Contact</h1>
+  <div>
+    @for (contact of contacts; track contact.title) {
+    <app-contacts [contact]="contact" />
+    }
+  </div>
+</main>
+<footer></footer>
