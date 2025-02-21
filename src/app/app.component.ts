@@ -9,12 +9,13 @@ import { getProjects } from './configs/project';
 import { getSkills } from './configs/skill';
 import { getContact } from './configs/contact';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CardComponent } from './card/card.component';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [ProjectsComponent, SkillsComponent, ContactsComponent, NavbarComponent],
+  imports: [ProjectsComponent, CardComponent, SkillsComponent, ContactsComponent, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
