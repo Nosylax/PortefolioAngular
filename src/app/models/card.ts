@@ -1,7 +1,10 @@
-export class CardData  {
+export class CardData {
 
-    constructor(public title : string, 
-                public description : string, 
-                public imageUrl : string){}
-    
-    }
+    constructor(public title: string,
+        public description: string,
+        public imageUrl: string,
+        public displayButton?: boolean
+
+    ) { }
+
+}

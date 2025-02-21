@@ -1,32 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectsComponent } from './projects/projects.component';
-import { Project } from './models/projects';
-import { Skill } from './models/skills';
-import { SkillsComponent } from './skills/skills.component';
-import { Contact } from './models/contacts';
-import { ContactsComponent } from './contacts/contacts.component';
+
 import { getProjects } from './configs/project';
 import { getSkills } from './configs/skill';
 import { getContact } from './configs/contact';
-import { NavbarComponent } from './navbar/navbar.component';
-import { CardComponent } from './card/card.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CardComponent } from './components/card/card.component';
+import { CardData } from './models/card';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [ProjectsComponent, CardComponent, SkillsComponent, ContactsComponent, NavbarComponent],
+  imports: [CardComponent, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  projects!: Project[];
-  skills!: Skill[];
-  contacts!: Contact[];
+  projects!: CardData[];
+  skills!: CardData[];
+  contacts!: CardData[];
 
   ngOnInit() {
-    this.projects = getProjects().map((project) => new Project(project.title, project.description, project.imageUrl))
-    this.skills = getSkills().map((skill) => new Skill(skill.title, skill.description, skill.imageUrl))
-    this.contacts = getContact().map((contact) => new Contact(contact.title, contact.description, contact.imageUrl))
+    this.projects = getProjects().map((project) => new CardData(project.title, project.description, project.imageUrl, project.displayButton))
+    this.skills = getSkills().map((skill) => new CardData(skill.title, skill.description, skill.imageUrl))
+    this.contacts = getContact().map((contact) => new CardData(contact.title, contact.description, contact.imageUrl))
   }
 }

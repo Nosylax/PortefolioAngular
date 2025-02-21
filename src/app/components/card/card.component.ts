@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CardData } from '../models/card';
+import { CardData } from '../../models/card';
 import { TitleCasePipe } from '@angular/common';
 
 @Component({
@@ -9,5 +9,6 @@ import { TitleCasePipe } from '@angular/common';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-@Input() data!: CardData;
+  @Input() data!: CardData;
+  // @Input() showButton: boolean = false;
 }
