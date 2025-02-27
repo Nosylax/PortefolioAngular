@@ -1,11 +1,6 @@
 <app-header></app-header>
 <main>
-  <section id="Home">
-    <div class="presentation">
-      <h1>Alyson Laville</h1>
-      <h2>Testeuse Logiciel</h2>
-    </div>
-  </section>
+  <app-banner></app-banner>
   <section id="Skills">
     <h1>Mes compétences</h1>
     <div class="card-container">
@@ -16,7 +11,7 @@
   </section>
   <section id="Projects">
     <h1>Mes projets</h1>
-    <div class="card-container">
+    <div class="card-container1">
       @for (project of projects; track project.title) {
       <app-card [data]="project" />
       }

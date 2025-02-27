@@ -1,9 +1,29 @@
-* {
+::-webkit-scrollbar {
+  width: 8px; /* Pour la barre verticale */
+  height: 8px; /* Pour la barre horizontale */
+}
+
+/* Couleur de fond de la scrollbar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Couleur de la barre de défilement */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Changement de couleur au survol */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 body {
   font-family: var(--body-font);
   background-color: var(--body-color);
+  overflow-x: hidden;
 }
 
 h1,
