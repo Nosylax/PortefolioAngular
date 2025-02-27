@@ -6,26 +6,30 @@ body {
   background-color: var(--body-color);
 }
 
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+}
+
 :root {
   --header-height: 3.5rem;
-  --first-hue: 234;
-  --sat: 100%;
-  --lig: 66%;
-  --second-hue: 218;
-  --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%);
-  --title-color: hsl(var(--second-hue), 15%, 95%);
-  --text-color: hsl(var(--second-hue), 8%, 75%);
-  --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: hsl(var(--second-hue), 0%, 12%);
-  --container-color: hsl(var(--second-hue), 30%, 20%);
-  --body-font: "Poppins", sans-serif;
+  --first-color: #2f4f4f;
+  --first-color-alt: #3a6351;
+  --title-color: #f5f5dc;
+  --text-color: #ceceb3;
+  --text-color-light: #b5b5a1;
+  --body-color: #1e2b2b;
+  --container-color: #4a5a5a;
+  --body-font: "Montserrat", sans-serif;
+  --icon-color: #a0a08b;
+  --icon-hover-color: #f5f5dc;
+  --icon-size: 24px;
+  --btn-bg-color: hsla(180, 15%, 10%, 0.8);
+  --btn-hover-color: #f5f5dc;
+  --btn-text-color: #fff;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-h1 {
-  color: var(--first-color);
 }

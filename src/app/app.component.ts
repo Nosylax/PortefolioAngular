@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
 import { getProjects } from './configs/project';
 import { getSkills } from './configs/skill';
 import { getContact } from './configs/contact';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardComponent } from './components/card/card.component';
 import { CardData } from './models/card';
+import { HeaderComponent } from "./layout/header/header/header.component";
+import { FooterComponent } from './layout/footer/footer/footer.component';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [CardComponent, NavbarComponent],
+  imports: [CardComponent, HeaderComponent, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
