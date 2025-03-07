@@ -5,7 +5,7 @@ export const getContact = (): CardData[] => [
     {
         title: 'Téléphone',
         description: '06.42.61.49.75',
-        imageUrl: "/phone-solid.svg",
+        imageUrl: "/assets/phone-solid.svg",
 
     },
     {

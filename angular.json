@@ -51,7 +51,7 @@
               
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets"
                 
               }
             ],
@@ -59,6 +59,7 @@
               "src/styles.scss"
             ],
             "scripts": []
+            
           },
           "configurations": {
             "production": {
@@ -109,9 +110,10 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets"
               }
             ],
             "styles": [

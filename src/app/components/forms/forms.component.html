@@ -1,0 +1,61 @@
+<div class="contact-container">
+  <h2>Contactez-moi</h2>
+  <div class="contact-detail-item">
+    <i class="fa-regular fa-envelope"></i>
+    <a href="mailto:alyson.alville@gmail.com">alyson.alville&#64;gmail.com</a>
+  </div>
+  <div class="contact-detail-item">
+    <i class="fa-solid fa-phone-flip"></i>
+    <a href="tel:+33642614975">06 42 61 49 75</a>
+  </div>
+  <div class="contact-detail-item">
+    <i class="fa-brands fa-linkedin __social-icon"></i>
+    <a
+      href="https://www.linkedin.com/in/alysonlaville/"
+      target="_blank"
+      rel="noreferrer"
+      >Alyson Laville</a
+    >
+  </div>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <!-- Champ Nom -->
+    <label for="name">Nom :</label>
+    <input id="name" type="text" formControlName="name" />
+    <div
+      class="error"
+      *ngIf="
+        contactForm.get('name')?.invalid && contactForm.get('name')?.touched
+      "
+    >
+      Le nom est requis (minimum 3 caractères).
+    </div>
+
+    <!-- Champ Email -->
+    <label for="email">Email :</label>
+    <input id="email" type="email" formControlName="email" />
+    <div
+      class="error"
+      *ngIf="
+        contactForm.get('email')?.invalid && contactForm.get('email')?.touched
+      "
+    >
+      Veuillez entrer une adresse e-mail valide.
+    </div>
+
+    <!-- Champ Message -->
+    <label for="message">Message :</label>
+    <textarea id="message" rows="4" formControlName="message"></textarea>
+    <div
+      class="error"
+      *ngIf="
+        contactForm.get('message')?.invalid &&
+        contactForm.get('message')?.touched
+      "
+    >
+      Le message doit contenir au moins 10 caractères.
+    </div>
+
+    <!-- Bouton d'envoi -->
+    <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
+  </form>
+</div>

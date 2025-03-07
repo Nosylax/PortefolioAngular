@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  width: 8px; /* Pour la barre verticale */
+  width: 15px; /* Pour la barre verticale */
   height: 8px; /* Pour la barre horizontale */
 }
 
@@ -30,6 +30,14 @@ h1,
 h2,
 h3 {
   color: var(--title-color);
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+  text-align: start;
+  padding: 10px 30px;
+  color: var(--text-color);
 }
 
 :root {

@@ -4,7 +4,20 @@ section {
     text-align: center;
     margin-bottom: 50 px;
   }
-  .card-container {
+  .about-container {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 10%;
+      border-radius: 10px;
+    }
+
+    p {
+      width: 25%;
+    }
+  }
+  .skill-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -16,20 +29,31 @@ section {
       width: 20%;
     }
   }
-}
 
-section {
-  padding: 4.5rem 0 1rem;
-  h1 {
-    text-align: center;
-    margin-bottom: 50 px;
-  }
-  .card-container1 {
+  .project-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10%;
     width: 100%;
     margin-left: 10px;
+
+    .cards {
+      width: 20%;
+    }
+  }
+
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 50px;
+
+    .cards {
+      width: 20%;
+    }
   }
 }

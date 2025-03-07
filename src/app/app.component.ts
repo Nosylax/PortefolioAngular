@@ -7,6 +7,7 @@ import { CardData } from './models/card';
 import { HeaderComponent } from "./layout/header/header/header.component";
 import { FooterComponent } from './layout/footer/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { FormsComponent } from './components/forms/forms.component';
 
 
 
@@ -15,7 +16,7 @@ import { BannerComponent } from './components/banner/banner.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CardComponent, HeaderComponent, HeaderComponent, FooterComponent, BannerComponent],
+  imports: [CardComponent, HeaderComponent, HeaderComponent, FooterComponent, BannerComponent, FormsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
