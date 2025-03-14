@@ -7,11 +7,13 @@ export const getSkills = (): CardData[] => [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
         imageUrl: "/react.png",
 
+
     },
     {
         title: 'HTML / CSS',
         description: 'Lorem amet dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
         imageUrl: "/html-css.png",
+
 
     },
     {

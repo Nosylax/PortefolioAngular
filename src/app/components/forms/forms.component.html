@@ -17,45 +17,13 @@
       >Alyson Laville</a
     >
   </div>
-  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-    <!-- Champ Nom -->
+  <form action="https://formspree.io/f/xblglrpz" method="POST">
     <label for="name">Nom :</label>
-    <input id="name" type="text" formControlName="name" />
-    <div
-      class="error"
-      *ngIf="
-        contactForm.get('name')?.invalid && contactForm.get('name')?.touched
-      "
-    >
-      Le nom est requis (minimum 3 caractères).
-    </div>
-
-    <!-- Champ Email -->
+    <input id="name" type="text" name="name" />
     <label for="email">Email :</label>
-    <input id="email" type="email" formControlName="email" />
-    <div
-      class="error"
-      *ngIf="
-        contactForm.get('email')?.invalid && contactForm.get('email')?.touched
-      "
-    >
-      Veuillez entrer une adresse e-mail valide.
-    </div>
-
-    <!-- Champ Message -->
+    <input id="email" type="email" name="email" />
     <label for="message">Message :</label>
-    <textarea id="message" rows="4" formControlName="message"></textarea>
-    <div
-      class="error"
-      *ngIf="
-        contactForm.get('message')?.invalid &&
-        contactForm.get('message')?.touched
-      "
-    >
-      Le message doit contenir au moins 10 caractères.
-    </div>
-
-    <!-- Bouton d'envoi -->
-    <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
+    <textarea id="message" rows="4" name="message"></textarea>
+    <button type="submit">Envoyer</button>
   </form>
 </div>

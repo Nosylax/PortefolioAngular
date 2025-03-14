@@ -2,7 +2,5 @@
   <img [src]="data.imageUrl" [alt]="data.title" />
   <h2>{{ data.title | titlecase }}</h2>
   <p>{{ data.description }}</p>
-  @if (data.displayButton) {
-  <button>Lien</button>
-  }
+  <a *ngIf="data.link" [href]="data.link" target="_blank">Lien</a>
 </div>

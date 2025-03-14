@@ -8,7 +8,7 @@ import { HeaderComponent } from "./layout/header/header/header.component";
 import { FooterComponent } from './layout/footer/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { FormsComponent } from './components/forms/forms.component';
-
+import { TranslateService } from '@ngx-translate/core';
 
 
 
@@ -26,8 +26,11 @@ export class AppComponent implements OnInit {
   contacts!: CardData[];
 
   ngOnInit() {
-    this.projects = getProjects().map((project) => new CardData(project.title, project.description, project.imageUrl, project.displayButton))
+    this.projects = getProjects().map((project) => new CardData(project.title, project.description, project.imageUrl, project.link))
     this.skills = getSkills().map((skill) => new CardData(skill.title, skill.description, skill.imageUrl))
     this.contacts = getContact().map((contact) => new CardData(contact.title, contact.description, contact.imageUrl))
   }
+
 }
+
+

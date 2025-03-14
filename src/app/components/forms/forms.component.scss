@@ -5,7 +5,6 @@
   border-radius: 5px;
 }
 
-// Style du conteneur
 .contact-container {
   width: 50%;
   margin: auto;
@@ -24,6 +23,8 @@
 
     a {
       color: var(--text-color);
+      padding-left: 10px;
+      text-decoration: none;
     }
   }
 
@@ -54,7 +55,7 @@
       background: var(--btn-bg-color);
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 4rem;
       cursor: pointer;
 
       &:disabled {

@@ -1,0 +1,11 @@
+{
+    "portfolio": {
+      "title": "My Portfolio",
+      "about": "About Me",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "home": {
+      "greeting": "Welcome to my portfolio!"
+    }
+  }
