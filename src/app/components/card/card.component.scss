@@ -1,3 +1,5 @@
+@use "@angular/material" as mat;
+
 .card {
   box-sizing: border-box;
   margin: 20px auto;
@@ -42,8 +44,15 @@
   }
 
   .progress-bar {
-    background-color: var(--icon-color);
-    color: var(--title-color);
-    border-radius: 150px;
+    @include mat.progress-bar-overrides(
+      (
+        active-indicator-color: var(--title-color),
+        track-color: var(--icon-color),
+        active-indicator-height: 10px,
+        track-height: 10px,
+      )
+    );
+
+    border-radius: 4px;
   }
 }

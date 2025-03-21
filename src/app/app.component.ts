@@ -8,7 +8,7 @@ import { HeaderComponent } from "./layout/header/header/header.component";
 import { FooterComponent } from './layout/footer/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { FormsComponent } from './components/forms/forms.component';
-import { TranslateService } from '@ngx-translate/core';
+
 
 
 
