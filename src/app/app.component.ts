@@ -2,22 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { getProjects } from './configs/project';
 import { getSkills } from './configs/skill';
 import { getContact } from './configs/contact';
-import { CardComponent } from './components/card/card.component';
+
 import { CardData } from './models/card';
 import { HeaderComponent } from "./layout/header/header/header.component";
 import { FooterComponent } from './layout/footer/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { FormsComponent } from './components/forms/forms.component';
-
-
-
-
-
-
+import { SkillCardComponent } from './components/card/skill-card/skill-card.component';
+import { ProjectCardComponent } from './components/card/project-card/project-card.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CardComponent, HeaderComponent, HeaderComponent, FooterComponent, BannerComponent, FormsComponent],
+  imports: [HeaderComponent, HeaderComponent, FooterComponent, BannerComponent, FormsComponent, SkillCardComponent, ProjectCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
