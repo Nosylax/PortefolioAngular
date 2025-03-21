@@ -14,6 +14,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 
 
+
 @Component({
   selector: 'app-root',
   imports: [CardComponent, HeaderComponent, HeaderComponent, FooterComponent, BannerComponent, FormsComponent],
@@ -25,9 +26,11 @@ export class AppComponent implements OnInit {
   skills!: CardData[];
   contacts!: CardData[];
 
+
+
   ngOnInit() {
     this.projects = getProjects().map((project) => new CardData(project.title, project.description, project.imageUrl, project.link))
-    this.skills = getSkills().map((skill) => new CardData(skill.title, skill.description, skill.imageUrl))
+    this.skills = getSkills().map((skill) => new CardData(skill.title, skill.description, skill.imageUrl, undefined, skill.progress))
     this.contacts = getContact().map((contact) => new CardData(contact.title, contact.description, contact.imageUrl))
   }
 

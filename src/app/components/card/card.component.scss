@@ -40,4 +40,10 @@
       box-shadow: 0 0 10px var(--icon-hover-color);
     }
   }
+
+  .progress-bar {
+    background-color: var(--icon-color);
+    color: var(--title-color);
+    border-radius: 150px;
+  }
 }

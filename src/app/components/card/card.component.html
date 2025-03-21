@@ -3,4 +3,10 @@
   <h2>{{ data.title | titlecase }}</h2>
   <p>{{ data.description }}</p>
   <a *ngIf="data.link" [href]="data.link" target="_blank">Lien</a>
+  <mat-progress-bar
+    class="progress-bar"
+    *ngIf="data.progress"
+    [value]="data.progress"
+    mode="determinate"
+  ></mat-progress-bar>
 </div>
