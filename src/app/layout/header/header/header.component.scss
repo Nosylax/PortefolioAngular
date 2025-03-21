@@ -10,6 +10,6 @@ header {
 
   &.scrolled {
     box-shadow: 1em 1em 10em 0.1em rgba(47, 79, 79, 0.8);
-    background: linear-gradient(#1e2b2b, 85%, rgba(74, 90, 90, 0.8));
+    background: linear-gradient(var(--body-color), 85%, var(--container-color));
   }
 }

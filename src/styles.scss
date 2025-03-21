@@ -24,6 +24,7 @@ body {
   font-family: var(--body-font);
   background-color: var(--body-color);
   overflow-x: hidden;
+  margin: auto;
 }
 
 h1,
@@ -42,19 +43,19 @@ p {
 
 :root {
   --header-height: 3.5rem;
-  --first-color: #2f4f4f;
-  --first-color-alt: #3a6351;
-  --title-color: #f5f5dc;
-  --text-color: #ceceb3;
-  --text-color-light: #b5b5a1;
-  --body-color: #1e2b2b;
-  --container-color: #4a5a5a;
+  --first-color: #d27c5e; /* Terre cuite */
+  --first-color-alt: #b0634e; /* Brique douce */
+  --title-color: #2b2b2b; /* Noir profond */
+  --text-color: #4f4f4f; /* Gris anthracite */
+  --text-color-light: #7a7a7a; /* Gris doux */
+  --body-color: #f3ede7; /* Beige clair */
+  --container-color: #e7d8cc; /* Nude sable */
   --body-font: "Montserrat", sans-serif;
-  --icon-color: #a0a08b;
-  --icon-hover-color: #f5f5dc;
+  --icon-color: #a48c7d; /* Taupe */
+  --icon-hover-color: #2b2b2b; /* Noir profond */
   --icon-size: 24px;
-  --btn-bg-color: hsla(180, 15%, 10%, 0.8);
-  --btn-hover-color: #f5f5dc;
+  --btn-bg-color: hsla(20, 50%, 40%, 0.8); /* Brun terre cuite translucide */
+  --btn-hover-color: #2b2b2b; /* Noir profond */
   --btn-text-color: #fff;
 }
 
