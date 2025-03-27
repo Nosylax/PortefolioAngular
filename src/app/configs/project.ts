@@ -15,7 +15,8 @@ export const getProjects = (): CardData[] => [
         description: 'J\'ai développé le front-end d\'une application de location de logement en utilisant React et React Router. J\'ai créé des composants pour afficher les informations des logements et configuré la navigation entre les pages de manière fluide. Le projet m\'a permis de renforcer mes compétences en gestion de l\'état avec les hooks et en développement d\'interfaces utilisateur modernes et réactives.',
         imageUrl: "/kasa.png",
         GHlink: 'https://github.com/Nosylax/kasa-app',
-        GHPlink: ''
+        GHPlink: 'https://nosylax.github.io/kasa-app/'
+
 
     },
     {

@@ -2,7 +2,7 @@
 {
   "name": "portefolio-angular",
   "version": "0.0.0",
-  "homepage": "https://Nosylax.github.io/kasa-app",
+  "homepage": "https://nosylax.github.io/kasa-app/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
