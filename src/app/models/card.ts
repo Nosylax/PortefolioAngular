@@ -3,7 +3,8 @@ export class CardData {
     constructor(public title: string,
         public description: string,
         public imageUrl: string,
-        public link?: string,
+        public GHlink?: string,
+        public GHPlink?: string,
         public progress?: number,
     ) { }
 

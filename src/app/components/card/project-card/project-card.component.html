@@ -3,6 +3,9 @@
   <div class="content">
     <h2>{{ data.title | titlecase }}</h2>
     <p>{{ data.description }}</p>
-    <a [href]="data.link" target="_blank">Lien</a>
+    <div class="button-link">
+      <a [href]="data.GHPlink" target="_blank">GitHub Pages</a>
+      <a [href]="data.GHlink" target="_blank">GitHub</a>
+    </div>
   </div>
 </div>

@@ -1,29 +1,77 @@
 <div class="contact-container">
   <h2>Contactez-moi</h2>
-  <div class="contact-detail-item">
-    <i class="fa-regular fa-envelope"></i>
-    <a href="mailto:alyson.alville@gmail.com">alyson.alville&#64;gmail.com</a>
+  <div class="links-contact">
+    <div class="contact-detail-item fa-2x">
+      <i class="fa-regular fa-envelope"></i>
+      <a href="mailto:alyson.alville@gmail.com">alyson.alville&#64;gmail.com</a>
+    </div>
+    <div class="contact-detail-item fa-2x">
+      <i class="fa-solid fa-phone-flip"></i>
+      <a href="tel:+33642614975">06 42 61 49 75</a>
+    </div>
+    <div class="contact-detail-item fa-2x">
+      <i class="fa-brands fa-linkedin __social-icon"></i>
+      <a
+        href="https://www.linkedin.com/in/alysonlaville/"
+        target="_blank"
+        rel="noreferrer"
+        >Alyson Laville</a
+      >
+    </div>
   </div>
-  <div class="contact-detail-item">
-    <i class="fa-solid fa-phone-flip"></i>
-    <a href="tel:+33642614975">06 42 61 49 75</a>
-  </div>
-  <div class="contact-detail-item">
-    <i class="fa-brands fa-linkedin __social-icon"></i>
-    <a
-      href="https://www.linkedin.com/in/alysonlaville/"
-      target="_blank"
-      rel="noreferrer"
-      >Alyson Laville</a
-    >
-  </div>
-  <form action="https://formspree.io/f/xblglrpz" method="POST">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <label for="name">Nom :</label>
-    <input id="name" type="text" name="name" />
+    <input id="name" type="text" formControlName="name" />
+    <div
+      *ngIf="
+        contactForm.get('name')?.invalid && contactForm.get('name')?.touched
+      "
+    >
+      <small *ngIf="contactForm.get('name')?.errors?.['required']"
+        >Le nom est requis.</small
+      >
+      <small *ngIf="contactForm.get('name')?.errors?.['minlength']"
+        >Minimum 3 caractères.</small
+      >
+    </div>
+
     <label for="email">Email :</label>
-    <input id="email" type="email" name="email" />
+    <input id="email" type="email" formControlName="email" />
+    <div
+      *ngIf="
+        contactForm.get('email')?.invalid && contactForm.get('email')?.touched
+      "
+    >
+      <small *ngIf="contactForm.get('email')?.errors?.['required']"
+        >L'email est requis.</small
+      >
+      <small *ngIf="contactForm.get('email')?.errors?.['email']"
+        >Email invalide.</small
+      >
+    </div>
+
     <label for="message">Message :</label>
-    <textarea id="message" rows="4" name="message"></textarea>
-    <button type="submit">Envoyer</button>
+    <textarea id="message" rows="4" formControlName="message"></textarea>
+    <div
+      *ngIf="
+        contactForm.get('message')?.invalid &&
+        contactForm.get('message')?.touched
+      "
+    >
+      <small *ngIf="contactForm.get('message')?.errors?.['required']"
+        >Le message est requis.</small
+      >
+      <small *ngIf="contactForm.get('message')?.errors?.['minlength']"
+        >Minimum 10 caractères.</small
+      >
+    </div>
+
+    <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
+
+    <p *ngIf="formSent" class="success-message">Message envoyé avec succès !</p>
+
+    <p *ngIf="formError" class="error-message">
+      Erreur lors de l'envoi. Veuillez réessayer.
+    </p>
   </form>
 </div>

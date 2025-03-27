@@ -25,8 +25,8 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit() {
-    this.projects = getProjects().map((project) => new CardData(project.title, project.description, project.imageUrl, project.link))
-    this.skills = getSkills().map((skill) => new CardData(skill.title, skill.description, skill.imageUrl, undefined, skill.progress))
+    this.projects = getProjects().map((project) => new CardData(project.title, project.description, project.imageUrl, project.GHlink, project.GHPlink))
+    this.skills = getSkills().map((skill) => new CardData(skill.title, skill.description, skill.imageUrl, undefined, undefined, skill.progress))
     this.contacts = getContact().map((contact) => new CardData(contact.title, contact.description, contact.imageUrl))
   }
 

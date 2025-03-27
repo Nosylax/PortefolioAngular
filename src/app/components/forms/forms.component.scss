@@ -6,13 +6,21 @@
 }
 
 .contact-container {
-  width: 50%;
   margin: auto;
-  padding: 20px;
-  border: 1px solid var(--first-color-alt);
-  border-radius: 10px;
+  padding: 30px;
+  border-radius: 1.25rem;
   box-shadow: 2px 2px 10px;
   background: var(--container-color);
+
+  .links-contact {
+    display: flex;
+    gap: 10%;
+    color: var(--icon-hover-color);
+
+    .mail-link {
+      display: flex;
+    }
+  }
 
   h2 {
     text-align: center;
@@ -20,11 +28,14 @@
 
   .contact-detail-item {
     padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
 
     a {
       color: var(--text-color);
       padding-left: 10px;
       text-decoration: none;
+      font-size: 20px;
     }
   }
 
@@ -57,9 +68,13 @@
       border: none;
       border-radius: 4rem;
       cursor: pointer;
+      font-family: var(--body-font);
+      font-size: 16px;
 
       &:disabled {
         background: #ccc;
+        cursor: not-allowed;
+        opacity: 0.5;
       }
     }
   }
