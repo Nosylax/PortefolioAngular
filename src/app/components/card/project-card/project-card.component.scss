@@ -12,6 +12,7 @@
   img {
     width: 30%;
     object-fit: contain;
+    border-radius: 1.25rem;
   }
 
   .content {
@@ -43,7 +44,7 @@
         &:hover {
           background-color: var(--btn-hover-color);
           transform: scale(1.05);
-          color: var(--btn-bg-color);
+          color: var(--body-color);
         }
 
         &:active {

@@ -1,8 +1,9 @@
 @mixin input-style {
-  padding: 8px;
-  margin-top: 5px;
+  padding: 20px;
+  margin-top: 10px;
   border: 1px solid var(--container-color);
   border-radius: 5px;
+  font-family: var(--body-font);
 }
 
 .contact-container {
@@ -16,9 +17,10 @@
     display: flex;
     gap: 10%;
     color: var(--icon-hover-color);
+    justify-content: flex-start;
 
-    .mail-link {
-      display: flex;
+    i {
+      color: var(--btn-bg-color);
     }
   }
 
