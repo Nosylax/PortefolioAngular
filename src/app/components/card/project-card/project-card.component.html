@@ -4,8 +4,10 @@
     <h2>{{ data.title | titlecase }}</h2>
     <p>{{ data.description }}</p>
     <div class="button-link">
-      <a [href]="data.GHPlink" target="_blank">GitHub Pages</a>
-      <a [href]="data.GHlink" target="_blank">GitHub</a>
+      <a *ngIf="data.GHPlink" [href]="data.GHPlink" target="_blank"
+        >GitHub Pages</a
+      >
+      <a *ngIf="data.GHlink" [href]="data.GHlink" target="_blank">GitHub</a>
     </div>
   </div>
 </div>
