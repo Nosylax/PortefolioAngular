@@ -4,6 +4,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin-left: 10px;
+  margin-right: 10px;
 
   a {
     text-decoration: none;
@@ -11,6 +12,62 @@ nav {
     font-weight: var(--font-medium);
     transition: 0.4s;
     font-size: 30px;
+  }
+
+  .translate-menu {
+    position: relative;
+    display: inline-block;
+  }
+
+  .menu-btn {
+    background-color: var(--icon-color);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: var(--icon-hover-color);
+    }
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    margin-top: 5px;
+
+    .lang-btn {
+      background-color: transparent;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: var(--icon-hover-color);
+        color: white;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .open {
+    display: block;
   }
 }
 .nav-menu {

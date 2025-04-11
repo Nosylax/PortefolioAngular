@@ -1,5 +1,12 @@
 <nav>
   <a href="#">Alyson</a>
+  <div class="translate-menu">
+    <button (click)="toggleMenu()" class="menu-btn">Langue</button>
+    <div [ngClass]="{ 'dropdown-content': true, open: isMenuOpen }">
+      <button (click)="switchLang('fr')" class="lang-btn">FR</button>
+      <button (click)="switchLang('en')" class="lang-btn">EN</button>
+    </div>
+  </div>
 </nav>
 <div class="nav-menu">
   <ul>
