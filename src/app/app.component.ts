@@ -14,6 +14,8 @@ import { ProjectCardComponent } from './components/card/project-card/project-car
 
 // ngx-translate
 import { TranslateModule } from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-root',
@@ -35,10 +37,11 @@ export class AppComponent implements OnInit {
   skills!: CardData[];
   contacts!: CardData[];
 
+  constructor(private translate: TranslateService) {
+  }
 
-
-  ngOnInit() {
-    this.projects = getProjects().map(
+  onLanguageChanged(newLang: string) {
+    this.projects = getProjects(newLang).map(
       (project) =>
         new CardData(
           project.title,
@@ -69,5 +72,10 @@ export class AppComponent implements OnInit {
           contact.imageUrl
         )
     );
+  }
+
+  ngOnInit() {
+    this.translate.onLangChange.subscribe(langEvent => this.onLanguageChanged(langEvent.lang))
+
   }
 }
