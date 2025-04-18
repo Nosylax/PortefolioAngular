@@ -21,6 +21,9 @@
     i {
       color: var(--btn-bg-color);
     }
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
 
   h2 {
@@ -75,7 +78,6 @@
       &:disabled {
         background: #ccc;
         cursor: not-allowed;
-        opacity: 0.5;
       }
     }
   }

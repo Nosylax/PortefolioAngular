@@ -2,14 +2,16 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-forms',
-  imports: [ReactiveFormsModule, NgIf],
+  imports: [ReactiveFormsModule, NgIf, TranslateModule],
   templateUrl: './forms.component.html',
   styleUrl: './forms.component.scss'
 })
 export class FormsComponent {
+
   contactForm: FormGroup;
   formSent = false;
   formError = false;

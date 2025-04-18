@@ -19,7 +19,7 @@
     </div>
   </div>
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-    <label for="name">Nom :</label>
+    <label for="name">{{ "form.name" | translate }} :</label>
     <input id="name" type="text" formControlName="name" />
     <div
       *ngIf="

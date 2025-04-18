@@ -11,6 +11,4 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent {
-  constructor(public translate: TranslateService) { }
-
 }

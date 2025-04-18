@@ -15,5 +15,13 @@
     "title": "Alyson Laville",
     "role": "Software Tester",
     "description": "At 29 years old, I transitioned into the software testing field through a certified training course at OpenClassrooms. This course allowed me to earn a diploma in web development and integration while specializing in test automation and software quality management. My 18-month apprenticeship provided me with hands-on experience as a software tester, where I applied my skills to ensure the reliability of applications throughout their lifecycle. Although my main expertise lies in software testing, my knowledge of web development complements my skills for a comprehensive approach to quality. Curious, methodical, and passionate about technical challenges, I am ready to take on new projects that combine expertise in testing and development to deliver high-quality applications."
+  },
+  "form": {
+    "name": "Name",
+    "Email": "Email",
+    "Message": "Message"
+  },
+  "footer": {
+    "right": "All rights reserved"
   }
 }

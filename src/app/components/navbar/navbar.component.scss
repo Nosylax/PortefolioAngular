@@ -80,6 +80,7 @@ nav {
   justify-content: center;
   font-size: var(--icon-size);
   color: var(--icon-color);
+  z-index: 1;
 
   ul {
     display: flex;
@@ -90,6 +91,9 @@ nav {
     backdrop-filter: blur(10px);
     width: 30%;
     background-color: hsla(180, 15%, 10%, 0.8);
+    @media (max-width: 1024px) {
+      width: 70%;
+    }
 
     li {
       padding: 0.7rem;

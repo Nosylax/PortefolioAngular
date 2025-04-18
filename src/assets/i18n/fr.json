@@ -15,7 +15,14 @@
     "title": "Alyson Laville",
     "role": "Testeuse Logiciel",
     "description": "À 29 ans, j'ai effectué une reconversion professionnelle dans le domaine du test logiciel grâce à une formation certifiante OpenClassrooms. Cette formation m’a permis de décrocher un diplôme de développeur intégrateur web tout en me spécialisant dans l’automatisation des tests et la gestion de la qualité logicielle. Mon alternance de 18 mois m’a offert une expérience concrète en tant que testeur logiciel, où j’ai pu mettre en pratique mes compétences pour garantir la fiabilité des applications tout au long de leur cycle de vie. Bien que mon expertise principale soit dans les tests logiciels, mes connaissances en développement web viennent compléter mes compétences pour une approche complète de la qualité. Curieuse, méthodique et passionnée par les défis techniques, je suis prête à relever de nouveaux projets, alliant expertise en tests et développement pour livrer des applications de haute qualité."
+  },
+  "form": {
+    "name": "Nom",
+    "Email": "Email",
+    "Message": "Message"
+  },
+  "footer": {
+    "right": "Tous droits réservés"
   }
-
 }
 

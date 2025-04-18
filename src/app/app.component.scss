@@ -1,6 +1,18 @@
 main {
   width: 70%;
   margin: auto;
+
+  @media (max-width: 1024px) {
+    width: 85%; // Pour les tablettes (écrans entre 600px et 1024px)
+  }
+
+  @media (max-width: 768px) {
+    width: 90%; // Pour des écrans plus petits
+  }
+
+  @media (max-width: 480px) {
+    width: 100%; // Pour les très petits écrans (mobiles)
+  }
 }
 
 section {
@@ -13,7 +25,7 @@ section {
 
     h1 {
       display: inline-block;
-      font-size: 90px;
+      font-size: 60px;
       font-weight: bold;
       letter-spacing: -9px;
       line-height: 89px;
@@ -31,7 +43,7 @@ section {
       }
       h2 {
         display: table;
-        font-size: 37px;
+        font-size: 30px;
         font-weight: bold;
         letter-spacing: 0;
         margin: 29px 0 0;
@@ -46,9 +58,15 @@ section {
     gap: 6%;
     width: 100%;
     margin-left: 10px;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
 
     .cards {
       width: 25%;
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
     }
   }
 
@@ -63,20 +81,6 @@ section {
     .project-cards {
       display: flex;
       align-items: center;
-    }
-  }
-
-  .contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5%;
-    width: 100%;
-    margin-left: 10px;
-    margin-bottom: 50px;
-
-    .cards {
-      width: 20%;
     }
   }
 }

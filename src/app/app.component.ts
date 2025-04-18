@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
         )
     );
 
-    this.skills = getSkills().map(
+    this.skills = getSkills(newLang).map(
       (skill) =>
         new CardData(
           skill.title,

@@ -11,4 +11,5 @@ import { CardData } from '../../../models/card';
 })
 export class SkillCardComponent {
   @Input() data!: CardData;
+
 }
