@@ -14,6 +14,9 @@
     width: 100%;
     height: 150px;
     object-fit: contain;
+    @media (max-width: 480px) {
+      height: 100px;
+    }
   }
   h2 {
     margin-bottom: 0;

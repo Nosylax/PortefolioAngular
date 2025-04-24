@@ -27,6 +27,20 @@ body {
   margin: auto;
 }
 
+h1 {
+  font-size: 60px;
+  @media (max-width: 480px) {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
+}
+
 h1,
 h2,
 h3 {

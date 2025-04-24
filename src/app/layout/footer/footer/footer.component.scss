@@ -3,4 +3,7 @@ p {
   display: flex;
   justify-content: center;
   color: var(--text-color);
+  @media (max-width: 480px) {
+    font-size: 11px;
+  }
 }

@@ -11,47 +11,61 @@
   height: 60vh;
   justify-content: center;
 
-  .presentation {
-    font-size: 30px;
+  @media (max-width: 480px) {
+    height: 80vh;
+  }
 
-    section {
-      padding: 4.5rem 13rem 1rem;
+  section {
+    padding: 4.5rem 13rem 1rem;
+    display: flex;
+    align-items: center;
+    @media (max-width: 1024px) {
+      padding: 4.5rem 5rem 1rem;
+    }
+    @media (max-width: 860px) {
       display: flex;
-      align-items: center;
-      @media (max-width: 1024px) {
-        padding: 4.5rem 5rem 1rem;
-      }
-      .about-container {
-        display: flex;
-        flex-direction: column;
+      flex-direction: column-reverse;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .about-container {
+      display: flex;
+      flex-direction: column;
 
-        h1 {
-          font-size: 3rem;
-          font-weight: bold;
-          line-height: 1.2;
-          margin-bottom: 50 px;
-          color: var(--container-color);
-          span {
-            color: var(--first-color-alt);
-            font-size: 2.5rem;
-            display: block;
+      h1 {
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 50 px;
+        color: var(--container-color);
+        @media (max-width: 860px) {
+          margin-bottom: 10px;
+        }
+        span {
+          color: var(--first-color-alt);
+          font-size: 2.5rem;
+          display: block;
+          @media (max-width: 860px) {
+            font-size: 20px;
           }
         }
+      }
 
-        p {
-          width: 70%;
-          color: var(--container-color);
-          padding: 0;
-          font-weight: 500;
+      p {
+        width: 90%;
+        color: var(--container-color);
+        padding: 0;
+        font-weight: 500;
+        @media (max-width: 860px) {
+          width: 100%;
         }
       }
-      img {
-        object-fit: contain;
-        border-radius: 30px;
-        width: 20%;
-        @media (max-width: 1024px) {
-          width: 30%;
-        }
+    }
+    img {
+      object-fit: contain;
+      border-radius: 30px;
+      width: 20%;
+      @media (max-width: 1024px) {
+        width: 30%;
       }
     }
   }
