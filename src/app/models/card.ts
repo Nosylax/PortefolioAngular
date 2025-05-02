@@ -5,7 +5,9 @@ export class CardData {
         public imageUrl: string,
         public GHlink?: string,
         public GHPlink?: string,
+        public subTitle?: string,
         public progress?: number,
+
     ) { }
 
 }

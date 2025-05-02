@@ -3,7 +3,7 @@
 .card {
   box-sizing: border-box;
   margin: 20px auto;
-  padding: 4rem 1rem 4rem 1rem;
+  padding: 4rem 1rem 4rem 1.5rem;
   text-align: center;
   background-color: var(--container-color);
   border-radius: 1.25rem;
@@ -15,6 +15,7 @@
     padding-left: 0px;
     padding-right: 0px;
   }
+
   img {
     width: 30%;
     object-fit: contain;
@@ -31,6 +32,10 @@
 
     h2 {
       margin-bottom: 0;
+    }
+
+    h3 {
+      color: var(--btn-bg-color);
     }
 
     .button-link {

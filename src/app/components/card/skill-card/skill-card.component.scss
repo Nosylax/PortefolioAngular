@@ -7,8 +7,8 @@
   text-align: center;
   background-color: var(--container-color);
   border-radius: 1.25rem;
-  @media (max-width: 1024px) {
-  }
+  height: 500px;
+  z-index: 1;
 
   img {
     width: 100%;
@@ -18,11 +18,19 @@
       height: 100px;
     }
   }
+
   h2 {
     margin-bottom: 0;
+    font-size: 25px;
+  }
+
+  p {
+    height: 110px;
   }
 
   .progress-bar {
+    border-radius: 4px;
+
     @include mat.progress-bar-overrides(
       (
         active-indicator-color: var(--title-color),
@@ -31,7 +39,5 @@
         track-height: 10px,
       )
     );
-
-    border-radius: 4px;
   }
 }

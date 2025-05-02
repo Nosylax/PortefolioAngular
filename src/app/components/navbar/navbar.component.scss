@@ -5,6 +5,7 @@ nav {
   align-items: center;
   margin-left: 10px;
   margin-right: 20px;
+  z-index: 100;
 
   a {
     text-decoration: none;
@@ -70,6 +71,7 @@ nav {
     display: block;
   }
 }
+
 .nav-menu {
   position: fixed;
   bottom: 1rem;
@@ -111,6 +113,7 @@ nav {
       &:hover {
         color: var(--icon-hover-color);
       }
+
       .sr-only {
         position: absolute;
         width: 1px;
@@ -122,6 +125,7 @@ nav {
         white-space: nowrap;
         border: 0;
       }
+
       i {
         font-size: inherit;
       }

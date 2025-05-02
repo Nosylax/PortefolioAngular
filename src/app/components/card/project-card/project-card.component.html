@@ -2,6 +2,7 @@
   <img [src]="data.imageUrl" [alt]="data.title" />
   <div class="content">
     <h2>{{ data.title | titlecase }}</h2>
+    <h3>{{ data.subTitle }}</h3>
     <p>{{ data.description }}</p>
     <div class="button-link">
       <a *ngIf="data.GHPlink" [href]="data.GHPlink" target="_blank"

@@ -48,7 +48,8 @@ export class AppComponent implements OnInit {
           project.description,
           project.imageUrl,
           project.GHlink,
-          project.GHPlink
+          project.GHPlink,
+          project.subTitle,
         )
     );
 
@@ -58,6 +59,7 @@ export class AppComponent implements OnInit {
           skill.title,
           skill.description,
           skill.imageUrl,
+          undefined,
           undefined,
           undefined,
           skill.progress

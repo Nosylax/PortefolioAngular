@@ -11,39 +11,39 @@ export const getSkills = (language = 'fr'): CardData[] => {
 const skilltFr = [
     {
         title: 'React',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
+        description: 'Création d’applications React, création de composants et manipulation de leur état.',
         imageUrl: "/react.png",
         progress: 70
 
     },
     {
         title: 'HTML / CSS',
-        description: 'Lorem amet dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
+        description: 'Intégration d’interfaces responsives et accessibles, utilisation de maquettes Figma, développement d’animations CSS.',
         imageUrl: "/html-css.png",
         progress: 90
 
     },
     {
         title: 'JS',
-        description: 'Lorem amet dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
+        description: 'Manipulation du DOM, création d’éléments dynamiques, gestion de données de formulaires.',
         imageUrl: "/js.png",
         progress: 70
     },
     {
         title: 'Gestion de projet',
-        description: 'Lorem amet dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
+        description: 'Analyse des besoins d’un client, définition d’une solution technique répondant aux besoins fonctionnelle, planification du projet.',
         imageUrl: "/gestion-de-projet.png",
         progress: 60
     },
     {
         title: 'Optimisation et debug',
-        description: 'Lorem amet dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
+        description: 'Identification des anomalies et correction d’un site existant, optimisation SEO et performance et publication d’un site en ligne.',
         imageUrl: "/optimisation-et-debug.png",
         progress: 70
     },
     {
         title: 'Test',
-        description: 'Lorem amet dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
+        description: 'Tests exploratoires, unitaires et d’intégration, définition d’une stratégie de test et d’un rédaction d’un cahier de recette, automatisation de tests E2E et d’API.',
         imageUrl: "/test.png",
         progress: 80
     }
@@ -52,37 +52,37 @@ const skilltFr = [
 const skillEn = [
     {
         title: 'React',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
+        description: 'Building React applications, creating components and managing their state.',
         imageUrl: "/react.png",
         progress: 70
     },
     {
         title: 'HTML / CSS',
-        description: 'Lorem amet dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
+        description: 'Developing responsive and accessible interfaces, using Figma mockups, creating CSS animations.',
         imageUrl: "/html-css.png",
         progress: 90
     },
     {
-        title: 'JavaScript',
-        description: 'Lorem amet dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
+        title: 'JS',
+        description: 'Manipulating the DOM, creating dynamic elements, handling form data.',
         imageUrl: "/js.png",
         progress: 70
     },
     {
         title: 'Project Management',
-        description: 'Lorem amet dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
+        description: 'Analyzing client needs, defining a technical solution that meets functional requirements, planning the project.',
         imageUrl: "/gestion-de-projet.png",
         progress: 60
     },
     {
-        title: 'Optimization & Debugging',
-        description: 'Lorem amet dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
+        title: 'Optimization and Debugging',
+        description: 'Identifying and fixing bugs on existing sites, optimizing SEO and performance, deploying websites online.',
         imageUrl: "/optimisation-et-debug.png",
         progress: 70
     },
     {
         title: 'Testing',
-        description: 'Lorem amet dolor sit amet, consectetur adipiscing elit. Quisque at auctor libero. Curabitur erat est, sodales vitae erat vel, aliquam.',
+        description: 'Exploratory, unit and integration testing, defining a testing strategy and writing a test plan, automating E2E and API tests.',
         imageUrl: "/test.png",
         progress: 80
     }
