@@ -1,0 +1,27 @@
+{
+  "SKILLS": {
+    "TITLE": "SKILLS",
+    "SUB": "MY SPECIALTIES"
+  },
+  "PROJECTS": {
+    "TITLE": "PORTFOLIO",
+    "SUB": "MY PROJECTS"
+  },
+  "CONTACT": {
+    "TITLE": "CONTACT",
+    "SUB": "GET IN TOUCH"
+  },
+  "banner": {
+    "title": "Alyson Laville",
+    "role": "Software Tester",
+    "description": "At 29, I made a career change into software testing through a certified OpenClassrooms program. With a diploma in web development, I specialized in test automation and software quality. During my 18-month apprenticeship, I gained solid hands-on experience as a software tester. My development skills allow me to take a comprehensive approach to quality. Curious, detail-oriented, and passionate about tech challenges, I’m ready to take on new projects to help deliver reliable, high-performing applications."
+  },
+  "form": {
+    "name": "Name",
+    "Email": "Email",
+    "Message": "Message"
+  },
+  "footer": {
+    "right": "All rights reserved"
+  }
+}
