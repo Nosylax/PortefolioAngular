@@ -9,17 +9,17 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent implements OnInit {
-  isMenuOpen = false;  // Par défaut, le menu est fermé
+  isMenuOpen = false;
 
   constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('fr');  // Langue par défaut
-    this.translate.use('fr');  // Langue actuelle par défaut
+    this.translate.setDefaultLang('fr');
+    this.translate.use('fr');
   }
 
   // Fonction pour changer la langue
   switchLang(lang: string) {
-    this.translate.use(lang);  // Change la langue
-    this.isMenuOpen = false;  // Ferme le menu après la sélection
+    this.translate.use(lang);
+    this.isMenuOpen = false;
   }
 
   // Fonction pour ouvrir/fermer le menu
@@ -28,6 +28,6 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.translate.use('fr');  // Assure-toi de charger la langue par défaut
+    this.translate.use('fr');
   }
 }
